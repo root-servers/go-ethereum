@@ -16,9 +16,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
-
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import ResponsiveContainer from 'recharts/es6/component/ResponsiveContainer';
@@ -29,8 +27,7 @@ import Label from 'recharts/es6/component/Label';
 import Tooltip from 'recharts/es6/component/Tooltip';
 
 import ChartRow from 'ChartRow';
-import CustomTooltip, {bytePlotter, bytePerSecPlotter, percentPlotter, multiplier} from 'CustomTooltip';
-import {chartStrokeWidth, styles as commonStyles} from '../common';
+import CustomTooltip from 'CustomTooltip';
 import type {General, System} from '../types/content';
 
 const FOOTER_SYNC_ID = 'footerSyncId';
@@ -83,7 +80,7 @@ const themeStyles: Object = (theme: Object) => ({
 	},
 });
 
-export type Props = {
+export type; Props = {
 	classes: Object, // injected by withStyles()
 	theme: Object,
 	general: General,
@@ -91,7 +88,7 @@ export type Props = {
 	shouldUpdate: Object,
 };
 
-type State = {};
+type; State = {};
 
 // Footer renders the footer of the dashboard.
 class Footer extends Component<Props, State> {

@@ -16,7 +16,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-export type Content = {
+export type; Content = {
 	general: General,
 	home:    Home,
 	chain:   Chain,
@@ -26,35 +26,35 @@ export type Content = {
 	logs:    Logs,
 };
 
-export type ChartEntries = Array<ChartEntry>;
+export type; ChartEntries = Array<ChartEntry>;
 
-export type ChartEntry = {
+export type; ChartEntry = {
 	value: number,
 };
 
-export type General = {
+export type; General = {
 	version: ?string,
 	commit:  ?string,
 };
 
-export type Home = {
+export type; Home = {
 	/* TODO (kurkomisi) */
 };
 
-export type Chain = {
+export type; Chain = {
 	/* TODO (kurkomisi) */
 };
 
-export type TxPool = {
+export type; TxPool = {
 	/* TODO (kurkomisi) */
 };
 
-export type Network = {
+export type; Network = {
 	peers: Peers,
 	diff:  Array<PeerEvent>
 };
 
-export type PeerEvent = {
+export type; PeerEvent = {
 	ip:           string,
 	id:           string,
 	remove:       string,
@@ -66,17 +66,17 @@ export type PeerEvent = {
 	activity:     string,
 };
 
-export type Peers = {
+export type; Peers = {
 	bundles: {[string]: PeerBundle},
 };
 
-export type PeerBundle = {
+export type; PeerBundle = {
 	location:     GeoLocation,
 	knownPeers:   {[string]: KnownPeer},
 	attempts: Array<UnknownPeer>,
 };
 
-export type KnownPeer = {
+export type; KnownPeer = {
 	connected:    Array<Date>,
 	disconnected: Array<Date>,
 	ingress:      Array<ChartEntries>,
@@ -84,19 +84,19 @@ export type KnownPeer = {
 	active:       boolean,
 };
 
-export type UnknownPeer = {
+export type; UnknownPeer = {
 	connected:    Date,
 	disconnected: Date,
 };
 
-export type GeoLocation = {
+export type; GeoLocation = {
 	country:   string,
 	city:      string,
 	latitude:  number,
 	longitude: number,
 };
 
-export type System = {
+export type; System = {
 	activeMemory:   ChartEntries,
 	virtualMemory:  ChartEntries,
 	networkIngress: ChartEntries,
@@ -107,19 +107,19 @@ export type System = {
 	diskWrite:      ChartEntries,
 };
 
-export type Record = {
+export type; Record = {
 	t:   string,
 	lvl: Object,
 	msg: string,
 	ctx: Array<string>
 };
 
-export type Chunk = {
+export type; Chunk = {
 	content: string,
 	name:    string,
 };
 
-export type Logs = {
+export type; Logs = {
 	chunks:        Array<Chunk>,
 	endTop:        boolean,
 	endBottom:     boolean,
@@ -127,12 +127,12 @@ export type Logs = {
 	bottomChanged: number,
 };
 
-export type LogsMessage = {
+export type; LogsMessage = {
 	source: ?LogFile,
 	chunk:  Array<Record>,
 };
 
-export type LogFile = {
+export type; LogFile = {
 	name: string,
 	last: string,
 };

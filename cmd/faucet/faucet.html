@@ -53,7 +53,7 @@
 							<span class="input-group-btn">
 								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Give me Ether	<i class="fa fa-caret-down" aria-hidden="true"></i></button>
 				        <ul class="dropdown-menu dropdown-menu-right">{{range $idx, $amount := .Amounts}}
-				          <li><a style="text-align: center;" onclick="tier={{$idx}}; {{if $.Recaptcha}}grecaptcha.execute(){{else}}submit({{$idx}}){{end}}">{{$amount}} / {{index $.Periods $idx}}</a></li>{{end}}
+				          <li><a style="text-align: center;" onclick="tier={{$idx}}; {{if $.Recaptcha}}grecaptcha.execute();{{else}}submit({{$idx}});{{end}}">{{$amount}} / {{index $.Periods $idx}}</a></li>{{end}}
 				        </ul>
 							</span>
 						</div>{{if .Recaptcha}}
@@ -207,9 +207,9 @@
 						}
 						$("#requests").html("<tbody>" + content + "</tbody>");
 					}
-				}
+				};
 				server.onclose = function() { setTimeout(reconnect, 3000); };
-			}
+			};
 			// Start a UI updater to push the progress bars forward until they are done
 			setInterval(function() {
 				$('.progress-bar').each(function() {
@@ -221,7 +221,7 @@
 						$(this).css('width', '100%');
 						$(this).addClass("progress-bar-danger");
 					}
-				})
+				});
 				$('.timer').each(function() {
 					var index = Number($(this).attr('id').substring(5));
 					$(this).html(moment.duration(moment(requests[index].time).unix()-moment().unix(), 'seconds').humanize(true));

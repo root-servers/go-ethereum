@@ -16,10 +16,10 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
-import type {ChildrenArray} from 'react';
+import React from 'react';
 
 import Grid from '@material-ui/core/Grid';
+import type {ChildrenArray} from 'react';
 
 // styles contains the constant styles of the component.
 const styles = {
@@ -35,7 +35,7 @@ const styles = {
 	},
 };
 
-export type Props = {
+export type; Props = {
 	children: ChildrenArray<React$Element<any>>,
 };
 

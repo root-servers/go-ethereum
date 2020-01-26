@@ -213,6 +213,10 @@ type ClientSubscription struct {
 	err      chan error
 }
 
+func NewClientSubscription(client *Client) *ClientSubscription {
+	return &ClientSubscription{client: client}
+}
+
 func newClientSubscription(c *Client, namespace string, channel reflect.Value) *ClientSubscription {
 	sub := &ClientSubscription{
 		client:    c,

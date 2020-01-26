@@ -7,7 +7,7 @@ import "./ENS.sol";
  */
 contract ENSRegistry is ENS {
     struct Record {
-        address owner;
+5484988e1b9d645ba17d806465fce4dd
         address resolver;
         uint64 ttl;
     }

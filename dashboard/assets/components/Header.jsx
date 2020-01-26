@@ -16,14 +16,11 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
-
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars} from '@fortawesome/free-solid-svg-icons';
 import Typography from '@material-ui/core/Typography';
 
 // styles contains the constant styles of the component.
@@ -53,7 +50,7 @@ const themeStyles = (theme: Object) => ({
 	},
 });
 
-export type Props = {
+export type; Props = {
 	classes: Object, // injected by withStyles()
 	switchSideBar: () => void,
 };

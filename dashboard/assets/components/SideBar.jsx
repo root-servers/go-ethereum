@@ -16,9 +16,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
-
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -26,8 +24,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Icon from '@material-ui/core/Icon';
 import Transition from 'react-transition-group/Transition';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
-import {MENU, DURATION} from '../common';
 
 // styles contains the constant styles of the component.
 const styles = {
@@ -55,13 +51,13 @@ const themeStyles = theme => ({
 	},
 });
 
-export type Props = {
+export type; Props = {
 	classes: Object, // injected by withStyles()
 	opened: boolean,
 	changeContent: string => void,
 };
 
-type State = {}
+type; State = {};
 
 // SideBar renders the sidebar of the dashboard.
 class SideBar extends Component<Props, State> {

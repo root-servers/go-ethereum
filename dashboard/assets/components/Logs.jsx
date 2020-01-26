@@ -16,11 +16,10 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
+import React from 'react';
 
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import escapeHtml from 'escape-html';
 import type {Record, Content, LogsMessage, Logs as LogsType} from '../types/content';
 
 // requestBand says how wide is the top/bottom zone, eg. 0.1 means 10% of the container height.
@@ -183,14 +182,14 @@ const styles = {
 	},
 };
 
-export type Props = {
+export type; Props = {
 	container:    Object,
 	content:      Content,
 	shouldUpdate: Object,
 	send:         string => void,
 };
 
-type State = {
+type; State = {
 	requestAllowed: boolean,
 };
 

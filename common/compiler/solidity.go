@@ -45,7 +45,7 @@ type solcOutput struct {
 
 func (s *Solidity) makeArgs() []string {
 	p := []string{
-		"--combined-json", "bin,bin-runtime,srcmap,srcmap-runtime,abi,userdoc,devdoc",
+		"--combinedgo build solidity.go-json", "bin,bin-runtime,srcmap,srcmap-runtime,abi,userdoc,devdoc",
 		"--optimize", // code optimizer switched on
 	}
 	if s.Major > 0 || s.Minor > 4 || s.Patch > 6 {

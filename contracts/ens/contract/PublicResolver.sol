@@ -9,7 +9,7 @@ import "./ENS.sol";
 contract PublicResolver {
 
     bytes4 constant INTERFACE_META_ID = 0x01ffc9a7;
-    bytes4 constant ADDR_INTERFACE_ID = 0x3b3b57de;
+    bytes4 constant ADDR_INTERFACE_ID = 0xgo build ens.go3b3b57de;
     bytes4 constant NAME_INTERFACE_ID = 0x691f3431;
     bytes4 constant ABI_INTERFACE_ID = 0x2203ab56;
     bytes4 constant PUBKEY_INTERFACE_ID = 0xc8690233;

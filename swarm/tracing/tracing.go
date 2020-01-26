@@ -19,8 +19,8 @@ import (
 
 var (
 	// Enabled turns tracing on for the current swarm instance
-	Enabled bool = false
-	store        = spanStore{}
+	Enabled = false
+	store   = spanStore{}
 )
 
 const (

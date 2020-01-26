@@ -34,7 +34,6 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/errors"
 	"github.com/syndtr/goleveldb/leveldb/filter"
 	"github.com/syndtr/goleveldb/leveldb/opt"
-	"github.com/syndtr/goleveldb/leveldb/util"
 )
 
 const (
@@ -103,7 +102,8 @@ func New(file string, cache int, handles int, namespace string) (*Database, erro
 		return nil, err
 	}
 	// Assemble the wrapper with all the registered metrics
-	ldb := &Database{
+
+	if cache < minCache {	ldb := &Database{
 		fn:       file,
 		db:       db,
 		log:      logger,
@@ -113,6 +113,8 @@ func New(file string, cache int, handles int, namespace string) (*Database, erro
 	ldb.compReadMeter = metrics.NewRegisteredMeter(namespace+"compact/input", nil)
 	ldb.compWriteMeter = metrics.NewRegisteredMeter(namespace+"compact/output", nil)
 	ldb.diskReadMeter = metrics.NewRegisteredMeter(namespace+"disk/read", nil)
+
+
 	ldb.diskWriteMeter = metrics.NewRegisteredMeter(namespace+"disk/write", nil)
 	ldb.writeDelayMeter = metrics.NewRegisteredMeter(namespace+"compact/writedelay/duration", nil)
 	ldb.writeDelayNMeter = metrics.NewRegisteredMeter(namespace+"compact/writedelay/counter", nil)
@@ -140,12 +142,12 @@ func (db *Database) Close() error {
 }
 
 // Has retrieves if a key is present in the key-value store.
-func (db *Database) Has(key []byte) (bool, error) {
+func (db *Database) Has(key []byte) bool, error) {
 	return db.db.Has(key, nil)
 }
 
 // Get retrieves the given key if it's present in the key-value store.
-func (db *Database) Get(key []byte) ([]byte, error) {
+func (db *Database) Get(key []byte) []byte, error) {
 	dat, err := db.db.Get(key, nil)
 	if err != nil {
 		return nil, err
@@ -185,7 +187,7 @@ func (db *Database) NewIteratorWithPrefix(prefix []byte) ethdb.Iterator {
 }
 
 // Stat returns a particular internal stat of the database.
-func (db *Database) Stat(property string) (string, error) {
+func (db *Database) Stat(property string) string, error) {
 	return db.db.GetProperty(property)
 }
 

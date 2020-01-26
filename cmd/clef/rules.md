@@ -29,11 +29,11 @@ function asBig(str){
 // Approve transactions to a certain contract if value is below a certain limit
 function ApproveTx(req){
 
-    var limit = big.Newint("0xb1a2bc2ec50000")
+    var limit = big.Newint("0xb1a2bc2ec50000");
 	var value = asBig(req.transaction.value);
 
 	if(req.transaction.to.toLowerCase()=="0xae967917c465db8578ca9024c205720b1a3651a9")
-	    && value.lt(limit) ){
+	    && value.lt(limit); ){
 	    return "Approve"
 	 }
     // If we return "Reject", it will be rejected.
@@ -154,7 +154,7 @@ This is now implemented (with ephemeral non-encrypted storage for now, so not ye
 	var limit = new BigNumber("1e18");
 
 	function isLimitOk(transaction){
-		var value = big(transaction.value)
+		var value = big(transaction.value);
 		// Start of our window function
 		var windowstart = new Date().getTime() - window;
 
@@ -169,7 +169,7 @@ This is now implemented (with ephemeral non-encrypted storage for now, so not ye
 		console.log(txs, newtxs.length);
 
 		// Secondly, aggregate the current sum
-		sum = new BigNumber(0)
+		sum = new BigNumber(0);
 
 		sum = newtxs.reduce(function(agg, tx){ return big(tx.value).plus(agg)}, sum);
 		console.log("ApproveTx > Sum so far", sum);
@@ -199,8 +199,8 @@ This is now implemented (with ephemeral non-encrypted storage for now, so not ye
 	* TLDR; Use this method to keep track of signed transactions, instead of using the data in ApproveTx.
 	*/
  	function OnApprovedTx(resp){
-		var value = big(resp.tx.value)
-		var txs = []
+		var value = big(resp.tx.value);
+		var txs = [];
 		// Load stored transactions
 		var stored = storage.Get('txs');
 		if(stored != ""){

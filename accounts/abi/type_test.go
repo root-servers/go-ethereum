@@ -31,7 +31,7 @@ type typeWithoutStringer Type
 
 // Tests that all allowed types get recognized by the type parser.
 func TestTypeRegexp(t *testing.T) {
-	tests := []struct {
+	var tests = []struct {
 		blob       string
 		components []ArgumentMarshaling
 		kind       Type
@@ -104,7 +104,6 @@ func TestTypeRegexp(t *testing.T) {
 		}{}), stringKind: "(int64)",
 			TupleElems: []*Type{{Kind: reflect.Int64, T: IntTy, Type: reflect.TypeOf(int64(0)), Size: 64, stringKind: "int64"}}, TupleRawNames: []string{"aTypicalParamName"}}},
 	}
-
 	for _, tt := range tests {
 		typ, err := NewType(tt.blob, tt.components)
 		if err != nil {

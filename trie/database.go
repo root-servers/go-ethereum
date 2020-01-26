@@ -549,7 +549,7 @@ func (db *Database) dereference(child common.Hash, parent common.Hash) {
 		node.children[child]--
 		if node.children[child] == 0 {
 			delete(node.children, child)
-			db.childrenSize -= (common.HashLength + 2) // uint16 counter
+			db.childrenSize -= common.HashLength + 2 // uint16 counter
 		}
 	}
 	// If the child does not exist, it's a previously committed node.

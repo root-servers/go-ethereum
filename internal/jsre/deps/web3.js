@@ -3655,7 +3655,7 @@ module.exports = Filter;
 
 
 },{"../utils/utils":20,"./formatters":30}],30:[function(require,module,exports){
-'use strict'
+'use strict';
 
 /*
     This file is part of web3.js.
@@ -6753,8 +6753,8 @@ module.exports = transfer;
 },{"../contracts/SmartExchange.json":3,"./iban":33}],50:[function(require,module,exports){
 
 },{}],51:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./enc-base64"), require("./md5"), require("./evpkdf"), require("./cipher-core"));
 	}
@@ -6986,8 +6986,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53,"./enc-base64":54,"./evpkdf":56,"./md5":61}],52:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -7862,8 +7862,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],53:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory();
 	}
@@ -7885,9 +7885,9 @@ module.exports = transfer;
 	     * Local polyfil of Object.create
 	     */
 	    var create = Object.create || (function () {
-	        function F() {};
-
-	        return function (obj) {
+            function F() {
+            }
+            return function (obj) {
 	            var subtype;
 
 	            F.prototype = obj;
@@ -7898,7 +7898,7 @@ module.exports = transfer;
 
 	            return subtype;
 	        };
-	    }())
+	    }());
 
 	    /**
 	     * CryptoJS namespace.
@@ -8623,8 +8623,8 @@ module.exports = transfer;
 
 }));
 },{}],54:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -8759,8 +8759,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],55:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -8909,8 +8909,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],56:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./sha1"), require("./hmac"));
 	}
@@ -9042,8 +9042,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53,"./hmac":58,"./sha1":77}],57:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -9109,8 +9109,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],58:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -9253,8 +9253,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],59:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./x64-core"), require("./lib-typedarrays"), require("./enc-utf16"), require("./enc-base64"), require("./md5"), require("./sha1"), require("./sha256"), require("./sha224"), require("./sha512"), require("./sha384"), require("./sha3"), require("./ripemd160"), require("./hmac"), require("./pbkdf2"), require("./evpkdf"), require("./cipher-core"), require("./mode-cfb"), require("./mode-ctr"), require("./mode-ctr-gladman"), require("./mode-ofb"), require("./mode-ecb"), require("./pad-ansix923"), require("./pad-iso10126"), require("./pad-iso97971"), require("./pad-zeropadding"), require("./pad-nopadding"), require("./format-hex"), require("./aes"), require("./tripledes"), require("./rc4"), require("./rabbit"), require("./rabbit-legacy"));
 	}
@@ -9272,8 +9272,8 @@ module.exports = transfer;
 
 }));
 },{"./aes":51,"./cipher-core":52,"./core":53,"./enc-base64":54,"./enc-utf16":55,"./evpkdf":56,"./format-hex":57,"./hmac":58,"./lib-typedarrays":60,"./md5":61,"./mode-cfb":62,"./mode-ctr":64,"./mode-ctr-gladman":63,"./mode-ecb":65,"./mode-ofb":66,"./pad-ansix923":67,"./pad-iso10126":68,"./pad-iso97971":69,"./pad-nopadding":70,"./pad-zeropadding":71,"./pbkdf2":72,"./rabbit":74,"./rabbit-legacy":73,"./rc4":75,"./ripemd160":76,"./sha1":77,"./sha224":78,"./sha256":79,"./sha3":80,"./sha384":81,"./sha512":82,"./tripledes":83,"./x64-core":84}],60:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -9349,8 +9349,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],61:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -9618,8 +9618,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],62:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -9697,8 +9697,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],63:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -9777,7 +9777,7 @@ module.exports = transfer;
 	    var Encryptor = CTRGladman.Encryptor = CTRGladman.extend({
 	        processBlock: function (words, offset) {
 	            // Shortcuts
-	            var cipher = this._cipher
+	            var cipher = this._cipher;
 	            var blockSize = cipher.blockSize;
 	            var iv = this._iv;
 	            var counter = this._counter;
@@ -9814,8 +9814,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],64:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -9838,7 +9838,7 @@ module.exports = transfer;
 	    var Encryptor = CTR.Encryptor = CTR.extend({
 	        processBlock: function (words, offset) {
 	            // Shortcuts
-	            var cipher = this._cipher
+	            var cipher = this._cipher;
 	            var blockSize = cipher.blockSize;
 	            var iv = this._iv;
 	            var counter = this._counter;
@@ -9854,7 +9854,7 @@ module.exports = transfer;
 	            cipher.encryptBlock(keystream, 0);
 
 	            // Increment counter
-	            counter[blockSize - 1] = (counter[blockSize - 1] + 1) | 0
+	            counter[blockSize - 1] = (counter[blockSize - 1] + 1) | 0;
 
 	            // Encrypt
 	            for (var i = 0; i < blockSize; i++) {
@@ -9873,8 +9873,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],65:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -9914,8 +9914,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],66:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -9938,7 +9938,7 @@ module.exports = transfer;
 	    var Encryptor = OFB.Encryptor = OFB.extend({
 	        processBlock: function (words, offset) {
 	            // Shortcuts
-	            var cipher = this._cipher
+	            var cipher = this._cipher;
 	            var blockSize = cipher.blockSize;
 	            var iv = this._iv;
 	            var keystream = this._keystream;
@@ -9969,8 +9969,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],67:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -10019,8 +10019,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],68:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -10064,8 +10064,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],69:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -10105,8 +10105,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],70:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -10136,8 +10136,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],71:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./cipher-core"));
 	}
@@ -10182,8 +10182,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53}],72:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./sha1"), require("./hmac"));
 	}
@@ -10328,8 +10328,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53,"./hmac":58,"./sha1":77}],73:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./enc-base64"), require("./md5"), require("./evpkdf"), require("./cipher-core"));
 	}
@@ -10519,8 +10519,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53,"./enc-base64":54,"./evpkdf":56,"./md5":61}],74:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./enc-base64"), require("./md5"), require("./evpkdf"), require("./cipher-core"));
 	}
@@ -10712,8 +10712,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53,"./enc-base64":54,"./evpkdf":56,"./md5":61}],75:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./enc-base64"), require("./md5"), require("./evpkdf"), require("./cipher-core"));
 	}
@@ -10852,8 +10852,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53,"./enc-base64":54,"./evpkdf":56,"./md5":61}],76:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -11120,8 +11120,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],77:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -11271,8 +11271,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],78:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./sha256"));
 	}
@@ -11352,8 +11352,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53,"./sha256":79}],79:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -11552,8 +11552,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53}],80:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./x64-core"));
 	}
@@ -11656,7 +11656,7 @@ module.exports = transfer;
 	        }),
 
 	        _doReset: function () {
-	            var state = this._state = []
+	            var state = this._state = [];
 	            for (var i = 0; i < 25; i++) {
 	                state[i] = new X64Word.init();
 	            }
@@ -11774,8 +11774,8 @@ module.exports = transfer;
 	                var lane = state[0];
 	                var roundConstant = ROUND_CONSTANTS[round];
 	                lane.high ^= roundConstant.high;
-	                lane.low  ^= roundConstant.low;;
-	            }
+                    lane.low ^= roundConstant.low;
+                }
 	        },
 
 	        _doFinalize: function () {
@@ -11876,8 +11876,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53,"./x64-core":84}],81:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./x64-core"), require("./sha512"));
 	}
@@ -11960,8 +11960,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53,"./sha512":82,"./x64-core":84}],82:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./x64-core"));
 	}
@@ -12284,8 +12284,8 @@ module.exports = transfer;
 
 }));
 },{"./core":53,"./x64-core":84}],83:[function(require,module,exports){
-;(function (root, factory, undef) {
-	if (typeof exports === "object") {
+        (function (root, factory, undef) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"), require("./enc-base64"), require("./md5"), require("./evpkdf"), require("./cipher-core"));
 	}
@@ -13055,8 +13055,8 @@ module.exports = transfer;
 
 }));
 },{"./cipher-core":52,"./core":53,"./enc-base64":54,"./evpkdf":56,"./md5":61}],84:[function(require,module,exports){
-;(function (root, factory) {
-	if (typeof exports === "object") {
+        (function (root, factory) {
+            if (typeof exports === "object") {
 		// CommonJS
 		module.exports = exports = factory(require("./core"));
 	}
@@ -13361,9 +13361,8 @@ module.exports = transfer;
 }));
 },{"./core":53}],85:[function(require,module,exports){
 /*! https://mths.be/utf8js v2.1.2 by @mathias */
-;(function(root) {
-
-	// Detect free variables `exports`
+        (function (root) {
+            // Detect free variables `exports`
 	var freeExports = typeof exports == 'object' && exports;
 
 	// Detect free variable `module`
@@ -13624,5 +13623,5 @@ if (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {
 
 module.exports = Web3;
 
-},{"./lib/web3":22}]},{},["web3"])
+},{"./lib/web3":22}]},{},["web3"]);
 //# sourceMappingURL=web3-light.js.map

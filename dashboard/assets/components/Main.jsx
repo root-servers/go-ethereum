@@ -16,14 +16,11 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
-
-import withStyles from '@material-ui/core/styles/withStyles';
+import React from 'react';
 
 import Network from 'Network';
 import Logs from 'Logs';
 import Footer from 'Footer';
-import {MENU} from '../common';
 import type {Content} from '../types/content';
 
 // styles contains the constant styles of the component.
@@ -47,7 +44,7 @@ const themeStyles = theme => ({
 	},
 });
 
-export type Props = {
+export type; Props = {
 	classes:      Object,
 	active:       string,
 	content:      Content,
@@ -55,7 +52,7 @@ export type Props = {
 	send:         string => void,
 };
 
-type State = {};
+type; State = {};
 
 // Main renders the chosen content.
 class Main extends Component<Props, State> {

@@ -90,6 +90,7 @@ func (node *ClientNode) Disconnect() {
 
 // update recalculates the buffer value at a specified time while also performing
 // scheduled flow control parameter updates if necessary
+//noinspection GoBinaryAndUnaryExpressionTypesCompatibility
 func (node *ClientNode) update(now mclock.AbsTime) {
 	for len(node.updateSchedule) > 0 && node.updateSchedule[0].time <= now {
 		node.recalcBV(node.updateSchedule[0].time)

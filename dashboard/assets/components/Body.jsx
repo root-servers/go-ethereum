@@ -16,7 +16,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
+import React from 'react';
 
 import SideBar from './SideBar';
 import Main from './Main';
@@ -31,7 +31,7 @@ const styles = {
 	},
 };
 
-export type Props = {
+export type; Props = {
 	opened:        boolean,
 	changeContent: string => void,
 	active:        string,

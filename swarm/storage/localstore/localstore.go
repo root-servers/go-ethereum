@@ -133,8 +133,8 @@ func New(path string, baseKey []byte, o *Options) (db *DB, err error) {
 		// needs to be buffered with the size of 1
 		// to signal another event if it
 		// is triggered during already running function
-		collectGarbageTrigger:    make(chan struct{}, 1),
-		close:                    make(chan struct{}),
+		collectGarbageTrigger: make(chan struct{}, 1),
+		close: make(chan struct{}),
 		collectGarbageWorkerDone: make(chan struct{}),
 	}
 	if db.capacity <= 0 {

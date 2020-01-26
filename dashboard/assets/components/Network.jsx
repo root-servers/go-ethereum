@@ -16,7 +16,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
 
-import React, {Component} from 'react';
+import React from 'react';
 
 import Table from '@material-ui/core/Table';
 import TableHead from '@material-ui/core/TableHead';
@@ -25,15 +25,11 @@ import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
 import Grid from '@material-ui/core/Grid/Grid';
 import Typography from '@material-ui/core/Typography';
-import {AreaChart, Area, Tooltip, YAxis} from 'recharts';
+import {Area, AreaChart, Tooltip, YAxis} from 'recharts';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCircle as fasCircle} from '@fortawesome/free-solid-svg-icons';
-import {faCircle as farCircle} from '@fortawesome/free-regular-svg-icons';
-import convert from 'color-convert';
 
-import CustomTooltip, {bytePlotter, multiplier} from 'CustomTooltip';
+import CustomTooltip from 'CustomTooltip';
 import type {Network as NetworkType, PeerEvent} from '../types/content';
-import {styles as commonStyles, chartStrokeWidth, hues, hueScale} from '../common';
 
 // Peer chart dimensions.
 const trafficChartHeight = 18;
@@ -320,13 +316,13 @@ const styles = {
 	},
 };
 
-export type Props = {
+export type; Props = {
     container:    Object,
     content:      NetworkType,
     shouldUpdate: Object,
 };
 
-type State = {};
+type; State = {};
 
 // Network renders the network page.
 class Network extends Component<Props, State> {
