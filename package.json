@@ -1,0 +1,8 @@
+{
+  "name": "go-ethereum",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/asicminer2009/go-ethereum.git",
+  "author": "asicminer001 <deaunapaul@gmail.com>",
+  "license": "MIT"
+}

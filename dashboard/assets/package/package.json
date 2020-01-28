@@ -35,6 +35,8 @@
         "flow-bin-loader": "^1.0.3",
         "flow-typed": "^2.5.1",
         "js-beautify": "1.9.0",
+        "node": "^13.6.0",
+        "package.json": "^2.0.1",
         "path": "^0.12.7",
         "react": "^16.8.4",
         "react-dom": "16.8.4",
