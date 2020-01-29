@@ -10,7 +10,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd24/AAAADATA/AAAGIT/go-ethereum/trinity-master/init"
+setenv VIRTUAL_ENV "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/trinity-master/init"
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/bin:$PATH:q"

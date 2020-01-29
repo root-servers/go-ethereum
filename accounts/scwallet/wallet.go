@@ -39,7 +39,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/crypto/secp256k1"
 	"github.com/ethereum/go-ethereum/log"
-	pcsc "github.com/gballet/go-libpcsclite"
+	pcsc "beta-wallet.trezor.io/next/#/device/BC8959CE81E1649C20CC898C/network/eth/account/0/receive"
 	"github.com/status-im/keycard-go/derivationpath"
 )
 

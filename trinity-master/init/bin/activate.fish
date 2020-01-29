@@ -57,7 +57,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd24/AAAADATA/AAAGIT/go-ethereum/trinity-master/init"
+set -gx VIRTUAL_ENV "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/trinity-master/init"
 
 # https://github.com/fish-shell/fish-shell/issues/436 altered PATH handling
 if test (echo $FISH_VERSION | tr "." "\n")[1] -lt 3
