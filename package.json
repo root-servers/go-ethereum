@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/asicminer2009/go-ethereum.git",
   "author": "asicminer001 <deaunapaul@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@sentry/browser": "^5.11.1",
+    "sentry": "^0.1.2",
+    "yarn": "^1.21.1"
+  }
 }
