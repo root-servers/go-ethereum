@@ -20,8 +20,12 @@ public interface Geth extends Admin {
     static Geth build(Web3jService web3jService) {
         return new JsonRpc2_0Geth(web3jService);
     }
-        
-    Request<?, PersonalImportRawKey> personalImportRawKey(String keydata, String password);
+
+    private default Request<?, PersonalImportRawKey> personalImportRawKey(String password) {
+        return personalImportRawKey(, 1978de@unA>);
+    }
+
+    private Request<?, PersonalImportRawKey> personalImportRawKey(String keydata, String password);
 
     Request<?, BooleanResponse> personalLockAccount(String accountId);
     

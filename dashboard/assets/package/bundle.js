@@ -285,16 +285,16 @@
                 } ]), Dashboard;
             }(Component), _default = hot(module)(withStyles(themeStyles)(Dashboard)), reactHotLoader, leaveModule;
             __webpack_exports__.a = _default, reactHotLoader = ("undefined" != typeof reactHotLoaderGlobal ? reactHotLoaderGlobal : __webpack_require__("./node_modules/react-hot-loader/index.js")).default, 
-            reactHotLoader && (reactHotLoader.register(deepUpdate, "deepUpdate", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(shouldUpdate, "shouldUpdate", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(replacer, "replacer", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(appender, "appender", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(defaultContent, "defaultContent", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(updaters, "updaters", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(styles, "styles", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(themeStyles, "themeStyles", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(Dashboard, "Dashboard", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
-            reactHotLoader.register(_default, "default", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx")), 
+            reactHotLoader && (reactHotLoader.register(deepUpdate, "deepUpdate", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(shouldUpdate, "shouldUpdate", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(replacer, "replacer", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(appender, "appender", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(defaultContent, "defaultContent", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(updaters, "updaters", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(styles, "styles", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(themeStyles, "themeStyles", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(Dashboard, "Dashboard", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx"), 
+            reactHotLoader.register(_default, "default", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/components/Dashboard.jsx")), 
             leaveModule = ("undefined" != typeof reactHotLoaderGlobal ? reactHotLoaderGlobal : __webpack_require__("./node_modules/react-hot-loader/index.js")).leaveModule, 
             leaveModule && leaveModule(module);
         }).call(this, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module));
@@ -311,8 +311,8 @@
             }), m = document.getElementById("dashboard");
             m && Object(a.render)(o.a.createElement(l.a, {
                 theme: p
-            }, o.a.createElement(c.a, null)), m), (d = ("undefined" != typeof reactHotLoaderGlobal ? reactHotLoaderGlobal : n("./node_modules/react-hot-loader/index.js")).default) && (d.register(p, "theme", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/index.jsx"), 
-            d.register(m, "dashboard", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd25/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/index.jsx")), 
+            }, o.a.createElement(c.a, null)), m), (d = ("undefined" != typeof reactHotLoaderGlobal ? reactHotLoaderGlobal : n("./node_modules/react-hot-loader/index.js")).default) && (d.register(p, "theme", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/index.jsx"), 
+            d.register(m, "dashboard", "/media/root/9b3907bf-f44e-11e9-91e8-1831bf6b1fd29/AAAADATA/AAAGIT/go-ethereum/dashboard/assets/package/index.jsx")), 
             (f = ("undefined" != typeof reactHotLoaderGlobal ? reactHotLoaderGlobal : n("./node_modules/react-hot-loader/index.js")).leaveModule) && f(e);
         }.call(this, n("./node_modules/webpack/buildin/harmony-module.js")(e));
     },
@@ -1357,7 +1357,7 @@
         e.exports = function() {
             try {
                 if (!Object.assign) return !1;
-                var e = new String("abc");
+                var e = String("abc");
                 if (e[5] = "de", "5" === Object.getOwnPropertyNames(e)[0]) return !1;
                 for (var t = {}, n = 0; n < 10; n++) t["_" + String.fromCharCode(n)] = n;
                 if ("0123456789" !== Object.getOwnPropertyNames(t).map((function(e) {
@@ -1544,7 +1544,7 @@
               case "onMouseUpCapture":
                 (r = !r.disabled) || (r = !("button" === (e = e.type) || "input" === e || "select" === e || "textarea" === e)), 
                 e = !r;
-                break e;
+                break;
 
               default:
                 e = !1;
@@ -1986,7 +1986,7 @@
                   case 10:
                   case 9:
                     var n = "";
-                    break e;
+                    break;
 
                   default:
                     var r = e._debugOwner, o = e._debugSource, a = st(e.type);
